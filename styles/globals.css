@@ -1,0 +1,89 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body,
+#__next {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.site-card-border-less-wrapper .ant-card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.display-card .ant-card-body {
+    padding: 0;
+}
+
+.display-card .ant-card-head {
+    border-bottom: 0 solid #f0f0f0;
+}
+
+main {
+    overflow: auto;
+    margin: 0 0 !important;
+}
+
+.ant-tooltip {
+    max-width: 700px;
+}
+
+/* 滚动条 */
+/* 滚动条整体部分,必须要设置 */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+}
+
+/* 滚动条的轨道 */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* 滚动条的滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+/* 滚动条的上下两端的按钮 */
+::-webkit-scrollbar-button {
+    height: 0;
+}
+
+/* 两个滚动条的交汇处 */
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+/* 滚动条的滑块 */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(222, 222, 222);
+}
+
+/* 滚动条的两端的按钮 */
+::-webkit-scrollbar-button {
+    width: 0;
+}
+
+.verify-alert .ant-alert-info {
+    background: rgba(170, 145, 230, 0.164);
+    border: 1px solid rgb(171, 145, 230);
+}
+
+.verify-alert .ant-alert-content {
+    padding: 0;
+}
+
+.transform-x-y-center {
+    transform: translate(-50%, -50%);
+}
+
+.transform-x-center{
+    transform: translateX(-50%);
+}
